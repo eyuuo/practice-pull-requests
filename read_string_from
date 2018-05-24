@@ -1,0 +1,73 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+char * read_string_from_file(char filename[]); 
+char *  read_string_from_console();
+
+int main(void) {
+  char * str;
+  char * str2;
+  //str=read_string_from_console();
+  str2=read_string_from_file("data.txt");
+  puts(str2);
+  return 0;
+}
+
+
+
+
+char * read_string_from_file(char filename[]){
+  char * line;
+  char * temp;
+  char * del_line_p;
+  int N;
+  int i, n=1;
+  char c;
+
+  FILE *fp1;
+  fp1=fopen(filename,"r");
+  while((c=fgetc(fp1))!=EOF)
+    if(c=='\n') n++;
+  fclose(fp1);
+  printf("\n");
+
+  temp = (char *)malloc(sizeof(char));
+  line = (char *)malloc(sizeof(char));
+
+  FILE * fp;
+  fp = fopen("data.txt", "rt");
+ while(i<n){
+    i++;
+    fgets(line, sizeof(line), fp); 
+    if ((del_line_p = (char*)strchr(line, '\n')) != NULL)*del_line_p = '\0';
+  //엔터 없애기
+    N=strlen(temp);
+    temp = (char *) realloc(temp, strlen(line)+30);
+    strncpy(temp+N,line,strlen(line));    
+  }
+  fclose(fp);
+  return temp;
+}
+
+
+char *  read_string_from_console()
+{
+  char *temp ;// "Hello";
+  char *temp2;// = "C programming!!";
+
+  int N;
+  // 1st alloc.
+  temp = (char *)malloc(sizeof(char));//자리 확보
+  temp2 = (char *)malloc(sizeof(char));
+  printf("string : \n");
+  while(1){
+    gets(temp2);
+    if(strcmp(temp2,"\0")==0)break;
+    N=strlen(temp);
+    temp = (char *) realloc(temp, strlen(temp2));
+    strncpy(temp+N,temp2,strlen(temp2));
+    //puts(temp);
+  }
+  //puts(temp);
+  return temp;
+}
