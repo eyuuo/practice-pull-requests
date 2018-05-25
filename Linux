@@ -1,2 +1,3 @@
 bash shell : ~$ /bin/bash
 make directory :~$ mkdir [name]
+rm -rf
