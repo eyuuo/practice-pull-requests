@@ -1,3 +1,3 @@
 bash shell : ~$ /bin/bash
-make directory :~$ mkdir [name]
-rm -rf
+make directory : ~$ mkdir [name]
+delete file : ~$ rm -rf
