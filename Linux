@@ -1,3 +1,4 @@
 bash shell : ~$ /bin/bash
 make directory : ~$ mkdir [name]
 delete file : ~$ rm -rf
+show file : cd 
