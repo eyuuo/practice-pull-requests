@@ -1,6 +1,7 @@
-bash shell : ~$ /bin/bash
+sh shell : ~$ /bin/bash
 make directory : ~$ mkdir [name]
 delete file : ~$ rm -rf
 show file : cd
-show list : ls  
-show txt : cat 
+show list : ls
+show txt : cat
+rewrite txt : cat > [txt name]
