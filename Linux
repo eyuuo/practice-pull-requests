@@ -3,3 +3,4 @@ make directory : ~$ mkdir [name]
 delete file : ~$ rm -rf
 show file : cd
 show list : ls  
+show txt : cat 
