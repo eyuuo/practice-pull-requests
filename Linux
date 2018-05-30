@@ -6,3 +6,4 @@ show list : ls
 show txt : cat
 rewrite txt : cat > [txt name]
 edit file : vim [file name]
+duplication file : cp [file name] [copy file name]
