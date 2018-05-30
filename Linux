@@ -5,3 +5,4 @@ show file : cd
 show list : ls
 show txt : cat
 rewrite txt : cat > [txt name]
+edit file : vim [file name]
