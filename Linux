@@ -8,3 +8,4 @@ rewrite txt : cat > [txt name]
 edit file : vim [file name]
 duplication file : cp [file name] [copy file name]
 search current location : pwd
+move file : mv [file name] [location] or [name]
