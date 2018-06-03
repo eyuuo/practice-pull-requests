@@ -10,3 +10,4 @@ duplication file : cp [file name] [copy file name]
 search current location : pwd
 move file : mv [file name] [location] or [name]
 Shows a few lines in front of the content : head
+.
