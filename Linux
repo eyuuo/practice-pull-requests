@@ -12,3 +12,4 @@ move file : mv [file name] [location] or [name]
 Shows a few lines in front of the content : head
 Shows a few lines in the back part of the content : tail
 see users : who
+.
