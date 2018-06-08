@@ -15,4 +15,4 @@ see users : who
 cal 
 ./[exe-file]
 git add [file name]
-git log
+sea git history :git log 
