@@ -16,3 +16,4 @@ cal
 ./[exe-file]
 git add [file name]
 sea git history :git log 
+check git state : git status 
