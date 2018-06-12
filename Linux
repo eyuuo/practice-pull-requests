@@ -15,5 +15,6 @@ see users : who
 cal 
 ./[exe-file]
 git add [file name]
+git commit -m "memo"
 sea git history :git log 
 check git state : git status 
