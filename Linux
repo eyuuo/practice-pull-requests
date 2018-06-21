@@ -18,4 +18,4 @@ git add [file name]
 git commit -m "memo"
 sea git history :git log 
 check git state : git status 
-upload :git pull -u origine master
+upload to site :git pull -u origine master
