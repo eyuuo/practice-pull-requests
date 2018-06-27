@@ -19,4 +19,4 @@ git commit -m "memo"
 sea git history :git log 
 check git state : git status 
 upload to site :git pull -u origine master
-..6
+..6/27
